@@ -1,0 +1,28 @@
+[include]
+        path = ~/.gitconfig.local
+[alias]
+        aliases = !git config --get-regexp alias | sed 's/^alias.//g' | sed 's/ / = /1'
+        br = branch
+        ci = commit
+        co = checkout
+        st = status
+        sw = switch
+        #log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[core]
+        autocrlf = false
+        ignorecase = false
+        quotepath = false
+        safecrlf = false
+        # By default path, ~/.config/git/ignore
+        excludesfile = ~/.gitignore_global
+[pull]
+        ff = only
+        rebase = true
+[merge]
+        ff = false
+        tool = vimdiff
+        conflictStyle = zdiff3
+[push]
+        default = current
+[grep]
+        lineNumber = true
