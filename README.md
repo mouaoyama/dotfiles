@@ -40,13 +40,13 @@ git config -l
 
 ### dotfiles
 
-https://github.com/colbycheeze/dotfiles
-https://github.com/driesvints/dotfiles
-https://github.com/holman/dotfiles
-https://github.com/mathiasbynens/dotfiles
-https://github.com/paulirish/dotfiles
+- https://github.com/colbycheeze/dotfiles
+- https://github.com/driesvints/dotfiles
+- https://github.com/holman/dotfiles
+- https://github.com/mathiasbynens/dotfiles
+- https://github.com/paulirish/dotfiles
 
 ### gitignore
 
-https://www.toptal.com/developers/gitignore
-https://github.com/github/gitignore/tree/master/Global
+- https://www.toptal.com/developers/gitignore
+- https://github.com/github/gitignore/tree/master/Global
