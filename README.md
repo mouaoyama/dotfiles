@@ -28,7 +28,10 @@ git config -l
 
 ```bash
 ./dotfiles/brew.sh
+```
 
+```bash
+# Check Installed applications
 brew leaves
 brew list --cask -1
 mas list
@@ -39,6 +42,11 @@ mas list
 sudo xcodebuild -license accept
 ```
 
+### Init system settings on Mac
+
+```bash
+./dotfiles/defaults.sh
+```
 
 ### Adding your SSH key to your GitHub account
 
@@ -60,3 +68,8 @@ sudo xcodebuild -license accept
 
 - https://www.toptal.com/developers/gitignore
 - https://github.com/github/gitignore/tree/master/Global
+
+### defaults
+
+- https://mths.be/macos
+- https://macos-defaults.com
