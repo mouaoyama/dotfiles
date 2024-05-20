@@ -2,11 +2,12 @@
 
 set -e
 
-DOT_DIR=$HOME/dotfiles
+# Get script path, like $HOME/dotfiles
+DOT_DIR=$(cd "$(dirname "${BASH_SOURCE:-$0}")"; pwd)
 
 echo "Deploying dotfiles..."
 
-for file in .??*; do
+for file in "$DOT_DIR"/.??*; do
     [[ "$file" = ".DS_Store" ]] && continue
     [[ "$file" = ".git" ]] && continue
     [[ "$file" = ".editorconfig" ]] && continue

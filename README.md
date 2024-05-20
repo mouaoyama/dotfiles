@@ -12,7 +12,7 @@ xcode-select --install
 
 ```bash
 cd ~ && git clone https://github.com/mouaoyama/dotfiles.git
-chmod +x ./*.sh
+chmod +x ./dotfiles/*.sh
 ./dotfiles/deploy.sh
 ```
 
