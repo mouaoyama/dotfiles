@@ -7,7 +7,9 @@ DOT_DIR=$(cd "$(dirname "${BASH_SOURCE:-$0}")"; pwd)
 
 echo "Deploying dotfiles..."
 
-for file in "$DOT_DIR"/.??*; do
+cd "$DOT_DIR"
+
+for file in .??*; do
     [[ "$file" = ".DS_Store" ]] && continue
     [[ "$file" = ".git" ]] && continue
     [[ "$file" = ".editorconfig" ]] && continue
