@@ -20,4 +20,4 @@ brew doctor
 
 # Install
 # brew bundle dump --global --force
-brew bundle --file="$HOME/.Brewfile"
+brew bundle --file="$HOME/.Brewfile" -v

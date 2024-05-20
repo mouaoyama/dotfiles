@@ -28,7 +28,17 @@ git config -l
 
 ```bash
 ./dotfiles/brew.sh
+
+brew leaves
+brew list --cask -1
+mas list
 ```
+
+```bash
+# When Xcode Install
+sudo xcodebuild -license accept
+```
+
 
 ### Adding your SSH key to your GitHub account
 
