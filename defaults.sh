@@ -75,14 +75,17 @@ defaults write com.apple.screencapture location -string "${HOME}/Desktop"
 # https://discussions.apple.com/thread/254781274?sortBy=best
 
 # Require password immediately after sleep or screen saver begins
-defaults write com.apple.screensaver askForPassword -int 1
-defaults write com.apple.screensaver askForPasswordDelay -int 0
+#defaults write com.apple.screensaver askForPassword -int 1
+#defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Lock Screen: start screen saver when inactive (0: disabled, 300: 5min)
-defaults -currentHost read com.apple.screensaver idleTime -int 300
+#defaults write com.apple.screensaver idleTime -int 300
 
 # Lock Screen: turn display off when inactive
-sudo pmset -a displaysleep 10
+#sudo pmset -a displaysleep 10
+
+# defaults write com.apple.screensaver not available since 10.13
+# Go System Setting > Lock Screen
 
 # ---------------------------------------------------------------------------
 # Finder
@@ -247,9 +250,9 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
 
-###############################################################################
-# Time Machine                                                                #
-###############################################################################
+# ---------------------------------------------------------------------------
+# Time Machine
+# ---------------------------------------------------------------------------
 
 # Prevent Time Machine from prompting to use new hard drives as backup volume
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
