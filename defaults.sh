@@ -36,8 +36,11 @@ defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
-# Control Center: bluetooth always show in menu bar
-defaults -currentHost write com.apple.controlcenter Bluetooth -int 18
+# Control Center: bluetooth show in menu bar
+defaults write com.apple.controlcenter "NSStatusItem Visible Bluetooth" -bool true
+
+# Control Center: spotlight hidden in menu bar
+defaults -currentHost write com.apple.Spotlight "MenuItemHidden" -bool true
 
 # Control Center: battery show percentage
 defaults -currentHost write com.apple.controlcenter BatteryShowPercentage -bool true
@@ -108,10 +111,10 @@ defaults write com.apple.finder DisableAllAnimations -bool true
 defaults write com.apple.finder NewWindowTarget -string "PfHm"
 
 # Show icons for hard drives, servers, and removable media on the desktop
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
-defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
-defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
@@ -184,7 +187,7 @@ defaults write com.apple.dock show-recents -bool false
 
 # Add iOS & Watch Simulator to Launchpad
 sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app" "/Applications/Simulator.app"
-sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator (Watch).app" "/Applications/Simulator (Watch).app"
+#sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator (Watch).app" "/Applications/Simulator (Watch).app"
 
 # ---------------------------------------------------------------------------
 # Hot corners
@@ -203,11 +206,11 @@ sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator (
 # 13: Lock Screen
 
 # Top left screen corner → Start screen saver
-defaults write com.apple.dock wvous-tl-corner -int 5
+defaults write com.apple.dock wvous-tl-corner -int 0
 defaults write com.apple.dock wvous-tl-modifier -int 0
 
 # Top right screen corner → no
-defaults write com.apple.dock wvous-tr-corner -int 0
+defaults write com.apple.dock wvous-tr-corner -int 5
 defaults write com.apple.dock wvous-tr-modifier -int 0
 
 # Bottom left screen corner → no
