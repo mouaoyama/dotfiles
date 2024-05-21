@@ -36,11 +36,12 @@ defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+# TODO: init menu bar, System Setting > Control Center
 # Control Center: bluetooth show in menu bar
-defaults write com.apple.controlcenter "NSStatusItem Visible Bluetooth" -bool true
+#defaults write com.apple.controlcenter "NSStatusItem Visible Bluetooth" -bool true
 
 # Control Center: spotlight hidden in menu bar
-defaults -currentHost write com.apple.Spotlight "MenuItemHidden" -bool true
+#defaults -currentHost write com.apple.Spotlight "MenuItemHidden" -bool true
 
 # Control Center: battery show percentage
 defaults -currentHost write com.apple.controlcenter BatteryShowPercentage -bool true
@@ -48,6 +49,8 @@ defaults -currentHost write com.apple.controlcenter BatteryShowPercentage -bool 
 # ---------------------------------------------------------------------------
 # Input & Accessories
 # ---------------------------------------------------------------------------
+
+# TODO: scroll spead, System Setting > Accessibility > Pointer Control > Trackpad Options
 
 # Trackpad: tracking spead
 defaults write -g com.apple.trackpad.scaling 3
@@ -70,6 +73,8 @@ defaults write com.apple.screencapture disable-shadow -bool true
 # Save screenshots to the desktop
 defaults write com.apple.screencapture location -string "${HOME}/Desktop"
 
+# TODO: true tone, automatically adjust brightness, System Setting > Screen
+
 # ---------------------------------------------------------------------------
 # Battery & Screen saver
 # ---------------------------------------------------------------------------
@@ -87,8 +92,8 @@ defaults write com.apple.screencapture location -string "${HOME}/Desktop"
 # Lock Screen: turn display off when inactive
 #sudo pmset -a displaysleep 10
 
-# defaults write com.apple.screensaver not available since 10.13
-# Go System Setting > Lock Screen
+# "defaults write com.apple.screensaver" not available since 10.13
+# TODO: battery and screen saver, System Setting > Lock Screen
 
 # ---------------------------------------------------------------------------
 # Finder
@@ -188,6 +193,8 @@ defaults write com.apple.dock show-recents -bool false
 # Add iOS & Watch Simulator to Launchpad
 sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app" "/Applications/Simulator.app"
 #sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator (Watch).app" "/Applications/Simulator (Watch).app"
+
+# TODO: add persist app in dock
 
 # ---------------------------------------------------------------------------
 # Hot corners
