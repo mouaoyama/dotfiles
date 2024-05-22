@@ -12,7 +12,7 @@ if [ -f ~/.ssh/id_ed25519 ]; then
 fi
 
 # Generating a new SSH key
-ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519
+ssh-keygen -t ed25519 -C "" -f ~/.ssh/id_ed25519
 
 # Adding your SSH key to the ssh-agent
 #eval "$(ssh-agent -s)"
