@@ -11,12 +11,8 @@ if [ -f ~/.ssh/id_ed25519 ]; then
   echo "Exist key"
 fi
 
-# Input key
-echo "Input your GitHub email address"
-read INPUT_EMAIL
-
 # Generating a new SSH key
-ssh-keygen -t ed25519 -C $INPUT_EMAIL -f ~/.ssh/id_ed25519
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519
 
 # Adding your SSH key to the ssh-agent
 #eval "$(ssh-agent -s)"
