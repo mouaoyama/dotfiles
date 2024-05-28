@@ -7,3 +7,7 @@ alias la="ls -laG"
 # brew
 export PATH=/opt/homebrew/bin:$PATH
 export PATH=/opt/homebrew/sbin:$PATH
+
+# mise
+eval "$(mise activate zsh)"
+
