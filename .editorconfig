@@ -14,3 +14,7 @@ insert_final_newline = true
 [*.md]
 max_line_length = 0
 trim_trailing_whitespace = false
+
+[{Makefile,**.mk}]
+indent_size = 4
+indent_style = tab

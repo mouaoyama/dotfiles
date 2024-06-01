@@ -6,14 +6,17 @@
 xcode-select --install
 ```
 
+```bash
+cd ~ && git clone https://github.com/mouaoyama/dotfiles.git
+# chmod +x ./dotfiles/bin/*.sh
+```
+
 ## Install
 
 ### Clone dotfiles repository and create symlinks
 
 ```bash
-cd ~ && git clone https://github.com/mouaoyama/dotfiles.git
-chmod +x ./dotfiles/*.sh
-./dotfiles/deploy.sh
+make -C ~/dotfiles deploy
 ```
 
 ### Set include gitconfig file
@@ -27,7 +30,7 @@ git config -l
 ### Install applications with Brewfile
 
 ```bash
-./dotfiles/brew.sh
+make -C ~/dotfiles brew
 ```
 
 ```bash
@@ -47,7 +50,7 @@ sudo xcodebuild -license accept
 ```bash
 # Enable this setting for your terminal,
 # System Preferences > Privacy > Full Disk Access
-./dotfiles/defaults.sh
+make -C ~/dotfiles defaults
 ```
 
 #### Change your computer’s name or local hostname on Mac
@@ -69,7 +72,7 @@ System Setting > Users & Groups, Control+click the user account, select Advanced
 ### Adding your SSH key to your GitHub account
 
 ```bash
-./dotfiles/ssh.sh
+make -C ~/dotfiles ssh
 ```
 
 ## Thanks to...
@@ -81,6 +84,7 @@ System Setting > Users & Groups, Control+click the user account, select Advanced
 - https://github.com/holman/dotfiles
 - https://github.com/mathiasbynens/dotfiles
 - https://github.com/paulirish/dotfiles
+- https://wiki.archlinux.org/title/Dotfiles
 
 ### gitignore
 
