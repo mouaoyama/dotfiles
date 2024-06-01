@@ -11,3 +11,14 @@ export PATH=/opt/homebrew/sbin:$PATH
 
 # mise
 eval "$(mise activate zsh)"
+
+# sheldon
+eval "$(sheldon source)"
+
+# completion
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+  autoload -Uz compinit
+  compinit
+fi
