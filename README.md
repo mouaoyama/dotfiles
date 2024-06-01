@@ -19,8 +19,8 @@ chmod +x ./dotfiles/*.sh
 ### Set include gitconfig file
 
 ```bash
-git config -f ~/.gitconfig.local user.name your_name
-git config -f ~/.gitconfig.local user.email your_email
+git config -f ~/.gitconfig user.name your_name
+git config -f ~/.gitconfig user.email your_email
 git config -l
 ```
 

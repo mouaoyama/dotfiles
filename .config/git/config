@@ -1,5 +1,3 @@
-[include]
-        path = ~/.gitconfig.local
 [alias]
         aliases = !git config --get-regexp alias | sed 's/^alias.//g' | sed 's/ / = /1'
         br = branch
@@ -13,8 +11,6 @@
         ignorecase = false
         quotepath = false
         safecrlf = false
-        # By default path, ~/.config/git/ignore
-        excludesfile = ~/.gitignore_global
 [pull]
         ff = only
         rebase = true
