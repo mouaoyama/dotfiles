@@ -1,0 +1,43 @@
+unlet! skip_defaults_vim
+source $VIMRUNTIME/defaults.vim
+
+" should clone git or use plugin manager
+"colorscheme iceberg
+"colorscheme tender
+"colorscheme dracula
+"colorscheme sonokai
+" better default color
+"colorscheme slate
+colorscheme habamax
+
+" Base
+set fenc=utf-8
+set nobackup
+set noswapfile
+set autoread
+set hidden
+
+" Appearance
+set number
+set showmatch
+set virtualedit=onemore
+set smartindent
+set list listchars=tab:\▸\-,trail:-,extends:>,precedes:<,nbsp:+
+set laststatus=2
+set showcmd
+
+" Tab
+set expandtab
+set tabstop=4
+set shiftwidth=4
+
+" Search
+set ignorecase
+set smartcase
+set wrapscan
+set hlsearch
+
+" Mode
+nnoremap j gj
+nnoremap k gk
+nnoremap <silent> <ESC><ESC> :nohlsearch<CR><ESC>

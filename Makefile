@@ -23,3 +23,8 @@ defaults:
 .PHONY: ssh
 ssh:
 	bash $(BIN_DIR)/ssh.sh
+
+# Setting VScode
+.PHONY: vscode
+vscode:
+	bash $(BIN_DIR)/vscode.sh

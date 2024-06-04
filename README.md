@@ -75,6 +75,17 @@ System Setting > Users & Groups, Control+click the user account, select Advanced
 make -C ~/dotfiles ssh
 ```
 
+### Setting vscode
+
+```bash
+make -C ~/dotfiles vscode
+```
+
+```bash
+# backup extensions
+code --list-extensions > ~/.config/vscode/extensions
+```
+
 ## Thanks to...
 
 ### dotfiles

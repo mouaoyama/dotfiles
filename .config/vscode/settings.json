@@ -1,0 +1,10 @@
+{
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 2,
+  "explorer.confirmDragAndDrop": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.scrollback": 1500,
+  "todo-tree.highlights.enabled": false,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.startupEditor": "none"
+}
