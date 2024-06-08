@@ -38,6 +38,9 @@ make -C ~/dotfiles brew
 brew leaves
 brew list --cask -1
 mas list
+
+# update Brewfile
+brew bundle dump --global --force --taps --brews --casks --mas
 ```
 
 ```bash
