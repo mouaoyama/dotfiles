@@ -14,21 +14,40 @@ shell = "zsh"
 
 [templates]
 defer = "{{ hooks?.pre | nl }}{% for file in files %}zsh-defer source \"{{ file }}\"\n{% endfor %}{{ hooks?.post | nl }}"
+# source = "{{ hooks?.pre | nl }}{% for file in files %}source \"{{ file }}\"{% endfor %}{{ hooks?.post | nl }}"
+# PATH = 'export PATH="$PATH:{{ dir }}"'
 
-[plugins]
+[plugins.zsh-defer]
+github = "romkatv/zsh-defer"
 
-# For example:
-#
-# [plugins.base16]
-# github = "chriskempson/base16-shell"
+# ----------------------------
+# Plugins
+# ----------------------------
+[plugins.zsh-autosuggestions]
+github = "zsh-users/zsh-autosuggestions"
+apply = ["defer"]
 
-  [plugins.zsh-defer]
-  github = "romkatv/zsh-defer"
+[plugins.zsh-completions]
+github = "zsh-users/zsh-completions"
+apply = ["defer"]
 
-  [plugins.zsh-autosuggestions]
-  github = 'zsh-users/zsh-autosuggestions'
-  apply = ['defer']
+# ----------------------------
+# CLI Tools
+# ----------------------------
+[plugins.fzf]
+inline = 'source <(fzf --zsh)'
 
-  [plugins.zsh-completions]
-  github = "zsh-users/zsh-completions"
-  apply = ['defer']
+[plugins.mise]
+# inline = 'zsh-defer eval "$(mise activate zsh)"'
+inline = 'eval "$(mise activate zsh)"'
+
+[plugins.zoxide]
+inline = 'eval "$(zoxide init zsh)"'
+
+# ----------------------------
+# Local configs
+# ----------------------------
+[plugins.dotfiles-zsh]
+local = "~/dotfiles/.config/zsh/conf.d"
+use = ["*.zsh"]
+# apply = ["defer"]
