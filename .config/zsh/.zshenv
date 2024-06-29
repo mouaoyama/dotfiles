@@ -19,3 +19,6 @@ export XDG_STATE_HOME="$HOME/.local/state"
 # zstyle ':completion:*' cache-path "$XDG_CACHE_HOME"/zsh/zcompcache
 # autoload -Uz compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-$ZSH_VERSION
 # compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-$ZSH_VERSION
+
+# mise
+export MISE_NODE_COREPACK=1

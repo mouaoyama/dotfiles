@@ -22,6 +22,7 @@ cask "alacritty"
 cask "android-studio"
 cask "appcleaner"
 cask "arc"
+cask "discord"
 cask "docker"
 cask "dropbox"
 cask "firefox"
@@ -37,12 +38,14 @@ cask "slack"
 cask "sublime-text"
 cask "tableplus"
 cask "the-unarchiver"
+cask "trex"
 cask "visual-studio-code"
 cask "vivaldi"
 cask "warp"
 cask "wezterm"
 cask "zoom"
 mas "Amphetamine", id: 937984704
+mas "Bitwarden", id: 1352778147
 mas "CompareMerge2", id: 1459748650
 mas "Disk Speed Test", id: 425264550
 mas "FileZilla Pro", id: 1298486723

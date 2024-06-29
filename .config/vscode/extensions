@@ -22,9 +22,11 @@ htmlhint.vscode-htmlhint
 ics.japanese-proofreading
 lottiefiles.vscode-lottie
 mhutchie.git-graph
+mrmlnc.vscode-scss
 ms-python.debugpy
 ms-python.python
 ms-python.vscode-pylance
+ms-vscode.makefile-tools
 ms-vsliveshare.vsliveshare
 natizyskunk.sftp
 octref.vetur
@@ -37,3 +39,4 @@ tamasfe.even-better-toml
 visualstudioexptteam.intellicode-api-usage-examples
 visualstudioexptteam.vscodeintellicode
 vscode-icons-team.vscode-icons
+wix.vscode-import-cost
