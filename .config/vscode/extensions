@@ -33,6 +33,7 @@ octref.vetur
 rangav.vscode-thunder-client
 redhat.vscode-yaml
 ritwickdey.liveserver
+rust-lang.rust-analyzer
 streetsidesoftware.code-spell-checker
 stylelint.vscode-stylelint
 tamasfe.even-better-toml

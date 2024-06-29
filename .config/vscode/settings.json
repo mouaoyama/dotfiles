@@ -2,6 +2,10 @@
   "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
   "explorer.confirmDragAndDrop": false,
+  "rust-analyzer.server.extraEnv": {
+    "RUSTUP_HOME": "${userHome}/.local/share/rustup",
+    "CARGO_HOME": "${userHome}/.local/share/cargo"
+  },
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.integrated.scrollback": 1500,
   "todo-tree.highlights.enabled": false,
