@@ -1,4 +1,5 @@
 tap "homebrew/bundle"
+brew "libgit2@1.7"
 brew "bat"
 brew "fd"
 brew "ffmpeg"
