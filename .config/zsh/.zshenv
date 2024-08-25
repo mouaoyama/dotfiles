@@ -36,3 +36,7 @@ export PYTHONUSERBASE="$XDG_DATA_HOME/python"
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export PATH="$CARGO_HOME/bin:$PATH"
+
+# NOTE: use diesel in my rust demo
+# mysql
+export PATH="/opt/homebrew/opt/mysql@8.4/bin:$PATH"
