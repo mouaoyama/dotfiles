@@ -37,9 +37,17 @@ apply = ["defer"]
 [plugins.fzf]
 inline = 'source <(fzf --zsh)'
 
+# NOTE: go project error in vscode
+#       `Failed to find the "go" binary in either GOROOT() or PATH`
+#       temporary solution:
+#        add shims Path or just run by command like `code ./git/go-project`
+#       Issue: https://github.com/golang/vscode-go/issues/971
 [plugins.mise]
 # inline = 'zsh-defer eval "$(mise activate zsh)"'
-inline = 'eval "$(mise activate zsh)"'
+inline = '''
+eval "$(mise activate zsh)"
+# export PATH="$HOME/.local/share/mise/shims:$PATH"
+'''
 
 [plugins.zoxide]
 inline = 'eval "$(zoxide init zsh)"'
