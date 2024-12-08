@@ -48,12 +48,21 @@ brew bundle dump --global --force --taps --brews --casks --mas
 sudo xcodebuild -license accept
 ```
 
+#### Update packages
+
+```bash
+brew update && brew upgrade && brew upgrade --cask --greedy && mas upgrade
+
+brew cleanup && brew autoremove && brew doctor
+```
+
 ### Init system settings on Mac
 
 ```bash
 # Enable this setting for your terminal,
 # System Preferences > Privacy > Full Disk Access
-make -C ~/dotfiles defaults
+# some properties is not working!
+# make -C ~/dotfiles defaults
 ```
 
 #### Change your computer’s name or local hostname on Mac
