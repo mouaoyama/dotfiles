@@ -42,6 +42,7 @@ inline = 'source <(fzf --zsh)'
 #       temporary solution:
 #        add shims Path or just run by command like `code ./git/go-project`
 #       Issue: https://github.com/golang/vscode-go/issues/971
+# NOTE: If not work config, mise trust --show
 [plugins.mise]
 # inline = 'zsh-defer eval "$(mise activate zsh)"'
 inline = '''
