@@ -7,8 +7,10 @@ xcode-select --install
 ```
 
 ```bash
-cd ~ && git clone https://github.com/mouaoyama/dotfiles.git
+# cd ~ && git clone https://github.com/mouaoyama/dotfiles.git .dotfiles
 # chmod +x ./dotfiles/bin/*.sh
+
+git clone https://github.com/mouaoyama/dotfiles.git
 ```
 
 ## Install
@@ -16,7 +18,8 @@ cd ~ && git clone https://github.com/mouaoyama/dotfiles.git
 ### Clone dotfiles repository and create symlinks
 
 ```bash
-make -C ~/dotfiles deploy
+# make -C ~/.dotfiles deploy
+make deploy
 ```
 
 ### Set include gitconfig file
@@ -30,7 +33,7 @@ git config -l
 ### Install applications with Brewfile
 
 ```bash
-make -C ~/dotfiles brew
+make brew
 ```
 
 ```bash
@@ -84,13 +87,13 @@ System Setting > Users & Groups, Control+click the user account, select Advanced
 ### Adding your SSH key to your GitHub account
 
 ```bash
-make -C ~/dotfiles ssh
+make ssh
 ```
 
 ### Setting vscode
 
 ```bash
-make -C ~/dotfiles vscode
+make vscode
 ```
 
 ```bash

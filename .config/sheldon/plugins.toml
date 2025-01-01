@@ -57,6 +57,6 @@ inline = 'eval "$(zoxide init zsh)"'
 # Local configs
 # ----------------------------
 [plugins.dotfiles-zsh]
-local = "~/dotfiles/.config/zsh/conf.d"
+local = "~/.config/zsh/conf.d"
 use = ["*.zsh"]
 # apply = ["defer"]
