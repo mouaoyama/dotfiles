@@ -1,19 +1,19 @@
 tap "homebrew/bundle"
 brew "awscli"
-brew "libgit2@1.7"
 brew "bat"
 brew "fastfetch"
 brew "fd"
 brew "ffmpeg"
 brew "fzf"
 brew "git"
+brew "gnupg"
 brew "hyperfine"
 brew "imagemagick"
+brew "jq"
 brew "lsd"
 brew "mas"
 brew "mise"
 brew "monolith"
-brew "mysql@8.4"
 brew "neovim"
 brew "ripgrep"
 brew "sheldon"
@@ -27,6 +27,7 @@ cask "alacritty"
 cask "appcleaner"
 cask "arc"
 cask "aws-vault"
+cask "blackhole-2ch"
 cask "discord"
 cask "docker"
 cask "dropbox"
@@ -36,7 +37,6 @@ cask "google-chrome"
 cask "microsoft-auto-update"
 cask "microsoft-teams"
 cask "obs"
-cask "pushplaylabs-sidekick"
 cask "raycast"
 cask "safari-technology-preview"
 cask "slack"
@@ -53,8 +53,4 @@ mas "Bitwarden", id: 1352778147
 mas "CompareMerge2", id: 1459748650
 mas "Disk Speed Test", id: 425264550
 mas "FileZilla Pro", id: 1298486723
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
 mas "Xcode", id: 497799835
