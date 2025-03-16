@@ -21,7 +21,7 @@ export XDG_STATE_HOME="$HOME/.local/state"
 # compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-$ZSH_VERSIONz
 
 # mise
-export MISE_NODE_COREPACK=1
+# export MISE_NODE_COREPACK=1
 
 # go
 export GOPATH="$XDG_DATA_HOME/go"
@@ -36,7 +36,3 @@ export PYTHONUSERBASE="$XDG_DATA_HOME/python"
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export PATH="$CARGO_HOME/bin:$PATH"
-
-# NOTE: use diesel in my rust demo
-# mysql
-export PATH="/opt/homebrew/opt/mysql@8.4/bin:$PATH"
