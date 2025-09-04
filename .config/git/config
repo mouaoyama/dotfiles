@@ -22,3 +22,5 @@
         default = current
 [grep]
         lineNumber = true
+[commit]
+        gpgsign = true

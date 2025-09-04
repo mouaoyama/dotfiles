@@ -23,6 +23,9 @@ export XDG_STATE_HOME="$HOME/.local/state"
 # mise
 # export MISE_NODE_COREPACK=1
 
+# gnupg
+export GNUPGHOME="$XDG_DATA_HOME/gnupg"
+
 # go
 export GOPATH="$XDG_DATA_HOME/go"
 export GOMODCACHE="$XDG_CACHE_HOME/go/mod"
