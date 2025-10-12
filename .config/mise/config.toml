@@ -4,9 +4,14 @@
 # you can set these with `mise use -g`
 node = "latest"
 "npm:pnpm" = "latest"
+"npm:ccusage" = "latest"
+"npm:@anthropic-ai/claude-code" = "latest"
+# "npm:@google/gemini-cli" = "latest"
+# "npm:@openai/codex" = "latest"
 deno = "latest"
 go = "latest"
 python = "latest"
+uv = "latest"
 ruby = "latest"
 
 

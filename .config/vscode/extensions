@@ -1,5 +1,6 @@
 alefragnani.bookmarks
 alefragnani.project-manager
+biomejs.biome
 bmewburn.vscode-intelephense-client
 christian-kohler.path-intellisense
 chrmarti.regex
@@ -13,6 +14,8 @@ firsttris.vscode-jest-runner
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
 formulahendry.code-runner
+github.copilot
+github.copilot-chat
 github.vscode-pull-request-github
 golang.go
 graphql.vscode-graphql
