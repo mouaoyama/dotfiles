@@ -2,13 +2,14 @@
 [tools]
 # global tool versions go here
 # you can set these with `mise use -g`
-node = "lts"
+node = "24"
 "npm:pnpm" = "latest"
 "npm:ccusage" = "latest"
 "npm:@anthropic-ai/claude-code" = "latest"
 # "npm:@google/gemini-cli" = "latest"
 # "npm:@openai/codex" = "latest"
 deno = "latest"
+bun = "latest"
 go = "latest"
 python = "latest"
 uv = "latest"
