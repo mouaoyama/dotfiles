@@ -10,6 +10,7 @@
 # claude code
 .claude/*
 !.claude/.gitkeep
+!.claude/settings.json
 
 # codex
 .codex/*
