@@ -23,3 +23,5 @@
 # vscode
 .vscode/*
 !.vscode/.gitkeep
+!.vscode/extensions.txt
+!.vscode/settings.json
