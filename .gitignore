@@ -1,9 +1,24 @@
 # zsh
-.config/zsh/.zsh_history
-.config/zsh/.zsh_sessions
-.config/zsh/.directory_history
-.config/zsh/.zcompdump
-.config/zsh/.zcompcache
+.config/zsh/*
+!.config/zsh/conf.d/*
+!.config/zsh/.zshenv
+!.config/zsh/.zshrc
 
 # raycast
-.config/raycast/extensions
+.config/raycast/*
+
+# claude code
+.claude/*
+!.claude/.gitkeep
+
+# codex
+.codex/*
+!.codex/.gitkeep
+
+# cursor
+.cursor/*
+!.cursor/.gitkeep
+
+# vscode
+.vscode/*
+!.vscode/.gitkeep
