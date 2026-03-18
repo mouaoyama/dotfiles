@@ -13,7 +13,6 @@
         safecrlf = false
 [pull]
         ff = only
-        rebase = true
 [merge]
         ff = false
         tool = vimdiff
@@ -24,3 +23,8 @@
         lineNumber = true
 [commit]
         gpgsign = true
+[fetch]
+        prune = true
+        pruneTags = true
+[log]
+        date = iso-local
